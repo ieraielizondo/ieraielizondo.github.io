@@ -1,0 +1,21 @@
+html,body{
+	background-color: #fffae5;
+	margin: 0 auto;
+}
+hr {
+	background-color: white;
+	color: blue;
+	height: 3px;
+	border: 1.5px solid;
+	border-radius: 15px;
+}
+#header  {
+	background-color: #f1e7d5;
+	border-bottom-right-radius: 16px;
+	border-bottom-left-radius: 16px;  
+}
+#logobt {
+	height: 25px;
+	width: 25px;
+	margin-right: 5px;
+}
