@@ -1,7 +1,17 @@
+/*IMPORTS
+---FUENTES:*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Muli);
+
+/*COMUN  */
+html{
+	border: 1px dotted green;
+}
 body{
 	background-color: #286090;
 	margin: 0 auto;
-	margin-top: 51px;
+	margin-top: 51px;	
 }
 hr {
 	background-color: white;
@@ -10,6 +20,48 @@ hr {
 	border: 1.5px solid;
 	border-radius: 15px;
 }
+section{
+	padding: 50px 25px;
+	min-height: 100vh;
+}
+section:nth-child(odd){
+	background-color: #f4f3ff;
+	color: black;
+
+}
+section:nth-child(even){
+	background-color: #286090;
+	color: white;
+}
+
+
+/*SECCION PRESENTACION*/
+#presentacion{
+
+}
+.title{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 3em;
+}
+.subtitle{
+	font-family: 'Courier New', sans-serif;
+	font-weight: 400;
+	font-size: 2em;
+}
+#img-perfil{
+	display: block;
+	height: 200px;
+	width: 200px;
+	border: 2px solid white;
+}
+
+/*SECCION XXXXXXXXXX*/
+
+/*SECCION XXXXXXXXXX*/
+
+/*SECCION XXXXXXXXXX*/
+
 #header  {
 	background-color: #f1e7d5;
 	border-bottom-right-radius: 16px;
@@ -22,4 +74,8 @@ hr {
 }
 #pb {
 	background-color: red;
+}
+footer{
+	background-color: #e4e1dc;
+
 }
