@@ -21,10 +21,10 @@
 	<!-- JS FILES-->
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script src="js/scrollTo.min.js"></script>
 	<script src="js/typed.min.js"></script>
-	<script src="js/index.js"></script>	
-	<script type="text/javascript">
+	<script src="js/index.js"></script>
+	<script src="js/fullpage.min.js"></script>
+	 <script type="text/javascript">
 		var userLang = navigator.language || navigator.userLanguage; 
 		//alert ("The language is: " + userLang);
 	</script>
@@ -43,13 +43,13 @@
 				</button>
 				<a class="navbar-brand" href="ieraielizondo.tk"><b>Ierai</b> Elizondo</a>
 			</div>
-			<!--
+			
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="/eu">Euskara</a></li>
 					<li><a href="#en">Inglés</a></li>				
 				</ul>			
-			</div> --><!--/.nav-collapse -->
+			</div> <!--/.nav-collapse -->
 		</div>		
 	</nav>
 	<section id="presentacion">
@@ -64,16 +64,16 @@
 						</center>
 					</div>
 					<div class="content-body">
-						
+						<center>
+							<a class="btn btn-circle" href="#experiencia" id="flecha">
+								<i class="fa fa-angle-double-down animated"></i>
+							</a>
+						</center>
 					</div>
-				</div>				
+				</div>
+				
 			</div>
 		</div>
-		<center>
-			<a class="btn btn-circle" onclick="scrollTo()" href="#experiencia" id="flecha">
-				<i class="fa fa-angle-double-down animated"></i>
-			</a>
-		</center>
 	</section>
 	<section id="experiencia">
 		<div class="container">
@@ -88,6 +88,8 @@
 						<div class="cont-info">
 							<div class="foto-info">
 								<img class="img-rounded" title="Deusto" src="img/deusto.jpg">
+									<a href=""></a>
+								</img>
 							</div>
 							<div class="texto-info">
 								<h3 class="info-titulo">
@@ -110,12 +112,13 @@
 								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.2178836778066!2d-1.9775511848767944!3d43.30969812913457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51aff6f7176bb5%3A0x92adfeb72b8f90f1!2sDeusto+Campus-Gurya%2C+20012+San+Sebasti%C3%A1n%2C+Guip%C3%BAzcoa!5e0!3m2!1ses!2ses!4v1468072277867" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
 							</div>
 						</div>
-						<hr class="separador">
 					</div>
 					<div class="col-sm-4 col-md-4 col-lg-4">
 						<div class="cont-info">
 							<div class="foto-info">
 								<img class="img-rounded" title="stt" src="img/stt.jpg">
+									<a href=""></a>
+								</img>
 							</div>
 							<div class="texto-info">
 								<h3 class="info-titulo">
@@ -138,12 +141,12 @@
 								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.8152865615566!2d-2.0113717848772765!3d43.297189779135046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51b06b579c8b15%3A0x2ad284836fa91c7!2sStt+Ingenier%C3%ADa+y+Sistemas+S.L.!5e0!3m2!1ses!2ses!4v1468071771555" width="100%" height="200px" frameborder="0" style="border:0" allowfullscreen></iframe>
 							</div>
 						</div>
-						<hr class="separador">
 					</div>
 					<div class="col-sm-4 col-md-4 col-lg-4">
 						<div class="cont-info">
 							<div class="foto-info">
 								<img class="img-rounded" title="Spottinstyle" src="img/spt.png">
+								</img>
 							</div>
 							<div class="texto-info">
 								<h3 class="info-titulo">
@@ -205,71 +208,19 @@
 					</center>
 				</div>
 				<div class="content-body">
-					<div class="col-sm-6 col-md-6 col-lg-6">
-						<div class="cont-info">
-							<div class="foto-info">
-								<img class="img-rounded proy" title="Deusto" src="img/eontzia.png">					
-							</div>
-							<div class="texto-info">
-								<h3 class="info-titulo">
-									eOntzia
-								</h3>
-								<h4>
-									<b>Descripción: </b> Proyecto entre tres centros de FP sobre la informatización de la recogida de residuos.
-								</h4>
-								<h4>
-									<b>Primer</b> premio de comunicación en los premios Don Bosco 2016 en Zaragoza.
-								</h4>								
-								<h4>
-									<b>Web: </b> <a href="eontzia.zubirimanteoweb.com">eontzia.zubirimanteoweb.com</a>.
-								</h4>
-							</div>
-						</div>
-						<hr class="separador">
-					</div>
-					<div class="col-sm-6 col-md-6 col-lg-6">
-						<div class="cont-info">
-							<div class="foto-info">
-								<img class="img-rounded proy" title="Spottinstyle" src="img/f1.jpeg">
-							</div>
-							<div class="texto-info">
-								<h3 class="info-titulo">
-									F1App
-								</h3>
-								<h4>
-									<b>Descripción: </b> Aplicacion móvil para Android con información sobre los pilotos, circuitos y escuderias de la Fórmula 1.
-								</h4>
-								<h4>
-									<b>Estado: </b> En desarrollo.
-								</h4>								
-								<h4>
-									<b>Lenguaje: </b> Java.
-								</h4>
-							</div>
-						</div>
-					</div>
+					
 				</div>
 			</div>
 		</div>
 	</section>
 	<footer>
 		<div class="container">
-			<div class="social-icons icon-circle icon-zoom">
-				<h2>Contacto:</h2>
-				<a href="https://es.linkedin.com/in/ieraielizondo" >
-					<i class="fa fa-linkedin" aria-hidden="true"></i>
-				</a>
-				<a href="https://github.com/ieraielizondo" >
-					<i class="fa fa-github" aria-hidden="true"></i>
-				</a>
-				<a href="http://telegram.me/ieraielizondo">
-					<i class="fa fa-paper-plane" aria-hidden="true"></i>
-				</a>
-				
-				<a href="mailto:ieraielizondo@gmail.com" title="">
-					<i class="fa fa-envelope" aria-hidden="true"></i>
-				</a>
-			</div>
+			<p class="navbar-text pull-left">Created by <strong>Ierai Elizondo</strong></p>
+			<a href="https://github.com/ieraielizondo">
+				<button class="navbar-btn pull-left btn btn-primary">
+					<img id="logobt" src="img/GH_bt.png">See GitHub profile
+				</button>
+			</a>
 		</div>		
 	</footer>
 </body>

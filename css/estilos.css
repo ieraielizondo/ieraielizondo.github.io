@@ -11,71 +11,310 @@ html{
 body{
 	background-color: #286090;
 	margin: 0 auto;
-	margin-top: 51px;	
-}
-hr {
-	background-color: white;
-	color: blue;
-	height: 3px;
-	border: 1.5px solid;
-	border-radius: 15px;
+	position: relative;
 }
 section{
-	padding: 50px 25px;
-	min-height: 100vh;
+	padding: 40px 25px;
+	border: 1px dotted red;
+	position: relative;
 }
 section:nth-child(odd){
-	background-color: #f4f3ff;
+	background: #ccd6fb; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#ccd6fb, #286090); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ccd6fb, #286090); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ccd6fb, #286090); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ccd6fb, #286090); /* Standard syntax */
 	color: black;
 
 }
 section:nth-child(even){
-	background-color: #286090;
+	background: #286090; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#286090, #ccd6fb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#286090, #ccd6fb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#286090, #ccd6fb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#286090, #ccd6fb); /* Standard syntax */
 	color: white;
 }
 
-
 /*SECCION PRESENTACION*/
 #presentacion{
-
+	min-height: 100vh;
+	padding-top: 91px;
 }
 .title{
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 3em;
 }
 .subtitle{
-	font-family: 'Courier New', sans-serif;
+	font-family: 'Muli', sans-serif;
 	font-weight: 400;
 	font-size: 2em;
 }
+.content-body{
+	margin-top: 20px;
+	overflow: hidden;
+	text-align: center;
+}
 #img-perfil{
 	display: block;
-	height: 200px;
-	width: 200px;
+	height: 180px;
+	width: 180px;
 	border: 2px solid white;
 }
+.btn{
+	-webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out; 
+}
+.btn-circle{
+	width: 60px;
+	height: 60px;
+	margin-top: 15px;
+	padding: 10px 16px;
+	border: 2px solid white;
+	border-radius: 100%!important;
+	font-size: 40px;
+	color: #fff;
+	background: 0 0;
+	position: absolute;
+	bottom: 20px;
+	-webkit-transition: background .3s ease-in-out;
+	-moz-transition: background .3s ease-in-out;
+	transition: background .3s ease-in-out;
+}
 
-/*SECCION XXXXXXXXXX*/
+.btn-circle i.animated {
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transition-duration: 1s;
+	-moz-transition-property: -moz-transform;
+	-moz-transition-duration: 1s;
+}
+.btn-circle i.animated {
+	-webkit-animation-name: pulse;
+	-moz-animation-name: pulse;
+	-webkit-animation-duration: 1.5s;
+	-moz-animation-duration: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+}
+@-webkit-keyframes pulse {
+  0 {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-moz-keyframes pulse {
+  0 {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
 
-/*SECCION XXXXXXXXXX*/
+/*SECCION Experiencia*/
+.cont-info{
+	padding-top: 20px;
+	color: white;
+}
+.foto-info>img{
+	display: block;
+	margin:0 auto;
+	height: 150px;
+	width: 90%;
+	background: white;
+	-webkit-transition: transform .3s ease;
+	-moz-transition: transform .3s ease;
+	-o-transition: transform .3s ease;
+	transition: transform .3s ease;
+	text-align: center;
+}
+.foto-info>img:hover{
+	transform:scale(1.10);
+}
+.texto-info{
+	text-align: center;
+	font-family: 'Muli', sans-serif;
+	background: rgba(0,0,0,.08);
+	border-radius: 5px;
+}
+.info-titulo{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 2em;
+}
+hr.separador {
+	display: none;
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+}
 
-/*SECCION XXXXXXXXXX*/
+/*SECCION Conocimientos*/
+.conocimientos-container{
+	display: inline-block;
+	overflow: hidden;
+}
+.conocimientos{
+	height: 150px;
+	width: 200px;
+	float: left;
+	margin: 5px;
+	float: left;
+	background-color: white;
+	border-radius: 5px;
+}
+.html{	
+	background-image: url(../img/html.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.php{	
+	background-image: url(../img/php.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.net{	
+	background-image: url(../img/puntonet.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.java{	
+	background-image: url(../img/java.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.bootstrap{	
+	background-image: url(../img/bootstrap.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: #563b7e;
+	background-position: center;
+}
+.sql{	
+	background-image: url(../img/sql.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.slim{	
+	background-image: url(../img/slim.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.apache{	
+	background-image: url(../img/apache.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.debubu{	
+	background-image: url(../img/debubu.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.win{	
+	background-image: url(../img/win.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 
-#header  {
-	background-color: #f1e7d5;
-	border-bottom-right-radius: 16px;
-	border-bottom-left-radius: 16px;  
+/*SECCION PROYECTOS*/
+.foto-info>img.proy{
+	height: 200px;
+	width: 50%;
+}
+/*FOOTER*/
+footer{
+	background-color: #e4e1dc;
+
 }
 #logobt {
 	height: 25px;
 	width: 25px;
 	margin-right: 5px;
 }
-#pb {
-	background-color: red;
+.social-icons .fa {
+	font-size: 1.8em;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	margin: 10px;
+	color: #FFF;
+	color: rgba(255, 255, 255, 0.8);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
-footer{
-	background-color: #e4e1dc;
+.social-icons.icon-circle .fa{ 
+	border-radius: 50%;
+}
+.social-icons.icon-zoom .fa:hover, .social-icons.icon-zoom .fa:active { 
+ 	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1); 
+}
+.social-icons .fa:hover, .social-icons .fa:active {
+	color: #FFF;
+	-webkit-box-shadow: 1px 1px 3px #333;
+	-moz-box-shadow: 1px 1px 3px #333;
+	box-shadow: 1px 1px 3px #333; 
+}
+.social-icons .fa-github,.social-icons .fa-github-alt,.social-icons .fa-github-square{
+	background-color:#070709;
+}
+.social-icons .fa-linkedin,.social-icons .fa-linkedin-square{
+	background-color:#0085AE;
+}
+.social-icons .fa-paper-plane{
+	background-color:#0085AE;
+}
+.social-icons .fa-envelope{
+	background-color:#CF3D2E;
+}
+.social-icons>h2{
+	display: inline-block;
+}
 
+/* MEDIA QUERIES*/
+@media (max-width: 768px) {
+  .title{
+    font-size: 35px;
+  }
+  .conocimientos{
+	width: 120px;
+	height: 70px;
+  }
+  hr.separador {
+  	display: block;
+  }
 }
