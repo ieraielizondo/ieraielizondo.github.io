@@ -15,7 +15,6 @@ body{
 }
 section{
 	padding: 40px 25px;
-	border: 1px dotted red;
 	position: relative;
 }
 section:nth-child(odd){
@@ -79,6 +78,7 @@ section:nth-child(even){
 	background: 0 0;
 	position: absolute;
 	bottom: 20px;
+	left: 47.8%;
 	-webkit-transition: background .3s ease-in-out;
 	-moz-transition: background .3s ease-in-out;
 	transition: background .3s ease-in-out;
