@@ -39,6 +39,7 @@ section:nth-child(even){
 #presentacion{
 	min-height: 100vh;
 	padding-top: 91px;
+	position: relative;
 }
 .title{
 	font-family: 'Montserrat', sans-serif;
@@ -66,10 +67,13 @@ section:nth-child(even){
     -moz-transition: all .3s ease-in-out;
      transition: all .3s ease-in-out; 
 }
+.btn:hover{
+	color: white;
+}
 .btn-circle{
 	width: 60px;
 	height: 60px;
-	margin-top: 15px;
+	margin: auto;
 	padding: 10px 16px;
 	border: 2px solid white;
 	border-radius: 100%!important;
@@ -78,7 +82,8 @@ section:nth-child(even){
 	background: 0 0;
 	position: absolute;
 	bottom: 20px;
-	left: 43%;
+	left: 0;
+	right: 0;
 	-webkit-transition: background .3s ease-in-out;
 	-moz-transition: background .3s ease-in-out;
 	transition: background .3s ease-in-out;
@@ -154,6 +159,9 @@ section:nth-child(even){
 	font-family: 'Muli', sans-serif;
 	background: rgba(0,0,0,.08);
 	border-radius: 5px;
+}
+.texto-info a{
+	color: #3a7342;
 }
 .info-titulo{
 	font-family: 'Montserrat', sans-serif;
