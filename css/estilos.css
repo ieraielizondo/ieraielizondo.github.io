@@ -78,7 +78,7 @@ section:nth-child(even){
 	background: 0 0;
 	position: absolute;
 	bottom: 20px;
-	left: 47.8%;
+	left: 43%;
 	-webkit-transition: background .3s ease-in-out;
 	-moz-transition: background .3s ease-in-out;
 	transition: background .3s ease-in-out;
