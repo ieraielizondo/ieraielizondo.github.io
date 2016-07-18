@@ -4,6 +4,7 @@
 	<meta name="author" description="Ierai Elizondo">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
+	<base href="http://ieraielizondo.tk">
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#2A4C3B">
 	<!-- Windows Phone -->
@@ -31,7 +32,7 @@
 	<title>Ierai Elizondo</title>
 </head>
 <body>
-	<div id="lang" style="display: none;">es</div>
+	<div id="lang" style="display: none;">en</div>
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
@@ -46,8 +47,8 @@
 			
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="/eu">Euskara</a></li>
-					<li><a href="#en">Inglés</a></li>				
+					<li><a href="../">Spanish</a></li>
+					<li><a href="/eu">Basque</a></li>				
 				</ul>			
 			</div> <!--/.nav-collapse -->
 		</div>		
@@ -55,32 +56,28 @@
 	<section id="presentacion">
 		<div class="container">
 			<div class="row content">
-				<div class="col-md-offset-1 col-md-10">
-					<div class="content-title">
-						<center>
-							<img id="img-perfil" class="img-circle" src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/11038246_10205240460559639_7335724232853054570_n.jpg?oh=d055fdbb6ff4cf2c40984298697c5494&oe=57E6F4B9">
-							<h1 class="title">Ierai Elizondo</h1>
-							<span class="subtitle"></span>
-						</center>
-					</div>
-					<div class="content-body">
-						<center>
-							<a class="btn btn-circle" href="#experiencia" id="flecha">
-								<i class="fa fa-angle-double-down animated"></i>
-							</a>
-						</center>
-					</div>
+				<div class="content-title">
+					<center>
+						<img id="img-perfil" class="img-circle" src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/11038246_10205240460559639_7335724232853054570_n.jpg?oh=d055fdbb6ff4cf2c40984298697c5494&oe=57E6F4B9">
+						<h1 class="title">Ierai Elizondo</h1>
+						<span class="subtitle"></span>
+					</center>
 				</div>
-				
+				<div class="content-body">
+					
+				</div>				
 			</div>
 		</div>
+		<a class="btn btn-circle" onclick="scrollto()"  id="flecha">
+			<i class="fa fa-angle-double-down animated"></i>
+		</a>		
 	</section>
 	<section id="experiencia">
 		<div class="container">
 			<div class="row content">
 				<div class="content-title">
 					<center>
-						<h1 class="title">Experiencia</h1>
+						<h1 class="title">Experience</h1>
 					</center>					
 				</div>
 				<div class="content-body">
@@ -96,16 +93,16 @@
 									Deustoko Unibertsitatea
 								</h3>
 								<h4>
-									<b>Tipo: </b> Prácticas
+									<b>Type: </b> Traineeship
 								</h4>
 								<h4>
-									<b>Periodo: </b> marzo - junio 2013.
+									<b>Period: </b> March - June 2013.
 								</h4>
 								<h4>
-									<b>Puesto: </b> Ayudante en el SAT.
+									<b>Position: </b> Techical service helper.
 								</h4>
 								<h4>
-									<b>Lugar: </b> Donostia/San Sebastián.
+									<b>Place: </b> Donostia/San Sebastián.
 								</h4>
 							</div>
 							<div class="mapa">
@@ -125,16 +122,16 @@
 									STT Systems
 								</h3>
 								<h4>
-									<b>Tipo: </b> Prácticas.
+									<b>Type: </b> Traineeship.
 								</h4>
 								<h4>
-									<b>Periodo: </b> marzo - mayo 2015.
+									<b>Period: </b> March - May 2015.
 								</h4>
 								<h4>
-									<b>Puesto: </b> Desarrollador software VB.NET.
+									<b>Position: </b> VB.NET software developer.
 								</h4>
 								<h4>
-									<b>Lugar: </b> Donostia/San Sebastián.
+									<b>Place: </b> Donostia/San Sebastián.
 								</h4>								
 							</div>
 							<div class="mapa">
@@ -153,16 +150,16 @@
 									Spottinstyle
 								</h3>
 								<h4>
-									<b>Tipo: </b> Prácticas
+									<b>Type: </b> Traineeship
 								</h4>
 								<h4>
-									<b>Periodo: </b> abril - mayo 2016.
+									<b>Period: </b> April - May 2016.
 								</h4>
 								<h4>
-									<b>Puesto: </b> Desarrollador web.
+									<b>Position: </b> Web developer.
 								</h4>
 								<h4>
-									<b>Lugar: </b> Londres.
+									<b>Place: </b> London.
 								</h4>
 							</div>
 							<div class="mapa">
@@ -179,7 +176,7 @@
 			<div class="content">
 				<div class="content-title">
 					<center>
-						<h1 class="title">Conocimientos</h1>
+						<h1 class="title">Knowledges</h1>
 					</center>
 				</div>
 				<div class="content-body">
@@ -204,23 +201,75 @@
 			<div class="content">
 				<div class="content-title">
 					<center>
-						<h1 class="title">Proyectos</h1>
+						<h1 class="title">Projects</h1>
 					</center>
 				</div>
 				<div class="content-body">
-					
+					<div class="col-sm-6 col-md-6 col-lg-6">
+						<div class="cont-info">
+							<div class="foto-info">
+								<img class="img-rounded proy" title="Deusto" src="img/eontzia.png">					
+							</div>
+							<div class="texto-info">
+								<h3 class="info-titulo">
+									eOntzia
+								</h3>
+								<h4>
+									<b>Description: </b> Project made beetwen three schools about the informatization of the waste collection.
+								</h4>
+								<h4>
+									<b>First</b> award winner in communication area of the Don Bosco awards 2016.
+								</h4>								
+								<h4>
+									<b>Web: <a href="http://eontzia.zubirimanteoweb.com">eontzia.zubirimanteoweb.com</a></b>
+								</h4>
+							</div>
+						</div>
+						<hr class="separador">
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-6">
+						<div class="cont-info">
+							<div class="foto-info">
+								<img class="img-rounded proy" title="Spottinstyle" src="img/f1.jpeg">
+							</div>
+							<div class="texto-info">
+								<h3 class="info-titulo">
+									F1App
+								</h3>
+								<h4>
+									<b>Description: </b> Android app with information of F1 drivers, teams and circuits.
+								</h4>
+								<h4>
+									<b>Status: </b> Developing.
+								</h4>								
+								<h4>
+									<b>Language: </b> Java.
+								</h4>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<footer>
 		<div class="container">
-			<p class="navbar-text pull-left">Created by <strong>Ierai Elizondo</strong></p>
-			<a href="https://github.com/ieraielizondo">
-				<button class="navbar-btn pull-left btn btn-primary">
-					<img id="logobt" src="img/GH_bt.png">See GitHub profile
-				</button>
-			</a>
+			<div class="social-icons icon-circle icon-zoom">
+				<h2>Contact:</h2>
+				<a href="https://es.linkedin.com/in/ieraielizondo" target="_blank" >
+					<i class="fa fa-linkedin" aria-hidden="true"></i>
+				</a>
+				<a href="https://github.com/ieraielizondo" target="_blank">
+					<i class="fa fa-github" aria-hidden="true"></i>
+				</a>
+				<a href="http://telegram.me/ieraielizondo" target="_blank">
+					<i class="fa fa-paper-plane" aria-hidden="true"></i>
+				</a>
+				
+				<a href="mailto:ieraielizondo@gmail.com" title="Send me an email to contact me.">
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+				</a>
+			</div>
 		</div>		
 	</footer>
 </body>

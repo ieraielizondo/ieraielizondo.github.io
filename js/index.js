@@ -18,9 +18,9 @@ $(document).ready(function(){
 	});
 	
 });
-function scrollTo(){
+function scrollto(){
 	$("#experiencia").ScrollTo({
-			duration: 2600,
+			duration: 1000,
 			durationMode: 'all'
 	});
 	//$(window).scrollTo(document.getElementById('twenty'), 800);
