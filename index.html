@@ -1,274 +1,186 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
-	<meta name="description" content="Ierai Elizondo's webpage">
-	<meta name="author" description="Ierai Elizondo">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="UTF-8">
-	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#286090">
-	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#286090">
-	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-	
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<link rel="stylesheet" type="text/css" href="css/typedjs.css">
-	<link rel="stylesheet" type="text/css" href="css/scrollbtn.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-	<!-- JS FILES-->
-	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script src="js/scrollTo.min.js"></script>
-	<script src="js/typed.min.js"></script>
-	<script src="js/index.js"></script>	
-	<script type="text/javascript">
-		var userLang = navigator.language || navigator.userLanguage; 
-		//alert ("The language is: " + userLang);
-	</script>
-	<title>Ierai Elizondo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ieWeld</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;500&display=swap" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <script src="js/index.js"></script>
 </head>
+
 <body>
-	<div id="lang" style="display: none;">es</div>
-	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
-			
-			<div class="navbar-header">
-				
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button> 
-				<a class="navbar-brand" href="http://ieraielizondo.tk"><b>Ierai</b> Elizondo</a>
-			</div> 
-			
-			<div id="navbar" class="navbar-collapse collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="eu">Euskara</a></li>
-					<li><a href="en">Inglés</a></li>				
-				</ul>			
-			</div> <!--/.nav-collapse -->
-		</div>		
-	</nav>
-	<section id="presentacion">
-		<div class="container">
-			<div class="row content">
-				<div class="content-title">
-					<center>
-						<img id="img-perfil" class="img-circle" src="img/me.jpg">
-						<h1 class="title">Ierai Elizondo</h1>
-						<span class="subtitle"></span>
-					</center>
-				</div>
-				<div class="content-body">
-					
-				</div>				
-			</div>
-		</div>
-		<a class="btn btn-circle" onclick="scrollto()"  id="flecha">
-			<i class="fa fa-angle-double-down animated"></i>
-		</a>		
-	</section>
-	<section id="experiencia">
-		<div class="container">
-			<div class="row content">
-				<div class="content-title">
-					<center>
-						<h1 class="title">Experiencia</h1>
-					</center>					
-				</div>
-				<div class="content-body">
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<div class="cont-info">
-							<div class="foto-info">
-								<img class="img-rounded" title="Deusto" src="img/deusto.jpg">
-							</div>
-							<div class="texto-info">
-								<h3 class="info-titulo">
-									Deustoko Unibertsitatea
-								</h3>
-								<h4>
-									<b>Tipo: </b> Prácticas
-								</h4>
-								<h4>
-									<b>Periodo: </b> marzo - junio 2013.
-								</h4>
-								<h4>
-									<b>Puesto: </b> Ayudante en el SAT.
-								</h4>
-								<h4>
-									<b>Lugar: </b> Donostia/San Sebastián.
-								</h4>
-							</div>
-							<div class="mapa">
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.2178836778066!2d-1.9775511848767944!3d43.30969812913457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51aff6f7176bb5%3A0x92adfeb72b8f90f1!2sDeusto+Campus-Gurya%2C+20012+San+Sebasti%C3%A1n%2C+Guip%C3%BAzcoa!5e0!3m2!1ses!2ses!4v1468072277867" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-							</div>
-						</div>
-						<hr class="separador">
-					</div>
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<div class="cont-info">
-							<div class="foto-info">
-								<img class="img-rounded" title="stt" src="img/stt.jpg">
-							</div>
-							<div class="texto-info">
-								<h3 class="info-titulo">
-									STT Systems
-								</h3>
-								<h4>
-									<b>Tipo: </b> Prácticas.
-								</h4>
-								<h4>
-									<b>Periodo: </b> marzo - mayo 2015.
-								</h4>
-								<h4>
-									<b>Puesto: </b> Desarrollador software VB.NET.
-								</h4>
-								<h4>
-									<b>Lugar: </b> Donostia/San Sebastián.
-								</h4>								
-							</div>
-							<div class="mapa">
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.8152865615566!2d-2.0113717848772765!3d43.297189779135046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51b06b579c8b15%3A0x2ad284836fa91c7!2sStt+Ingenier%C3%ADa+y+Sistemas+S.L.!5e0!3m2!1ses!2ses!4v1468071771555" width="100%" height="200px" frameborder="0" style="border:0" allowfullscreen></iframe>
-							</div>
-						</div>
-						<hr class="separador">
-					</div>
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<div class="cont-info">
-							<div class="foto-info">
-								<img class="img-rounded" title="Spottinstyle" src="img/spt.png">
-							</div>
-							<div class="texto-info">
-								<h3 class="info-titulo">
-									Spottinstyle
-								</h3>
-								<h4>
-									<b>Tipo: </b> Prácticas
-								</h4>
-								<h4>
-									<b>Periodo: </b> abril - mayo 2016.
-								</h4>
-								<h4>
-									<b>Puesto: </b> Desarrollador web.
-								</h4>
-								<h4>
-									<b>Lugar: </b> Londres.
-								</h4>
-							</div>
-							<div class="mapa">
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.443169538445!2d-0.21901268454019931!3d51.523430979637816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487610236ff55697%3A0xfda1a147c7badc71!2sSpottinstyle!5e0!3m2!1ses!2ses!4v1468072327838" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section id="habilidades">
-		<div class="container">
-			<div class="content">
-				<div class="content-title">
-					<center>
-						<h1 class="title">Conocimientos</h1>
-					</center>
-				</div>
-				<div class="content-body">
-					<div class="conocimientos-container">
-						<div class="conocimientos html" title="HTML5+CSS3+JS"></div>
-						<div class="conocimientos php" title="PHP"></div>
-						<div class="conocimientos net" title="C#.NET y VB.NET"></div>
-						<div class="conocimientos java" title="Java/Java Android"></div>
-						<div class="conocimientos bootstrap" title="Bootstrap"></div>
-						<div class="conocimientos sql" title="T-SQL/SQL"></div>
-						<div class="conocimientos slim" title="Slim micro framework"></div>
-						<div class="conocimientos apache" title="Apache"></div>
-						<div class="conocimientos debubu" title="Debian/Ubuntu"></div>
-						<div class="conocimientos win" title="Windows"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section id="proyectos">
-		<div class="container">
-			<div class="content">
-				<div class="content-title">
-					<center>
-						<h1 class="title">Proyectos</h1>
-					</center>
-				</div>
-				<div class="content-body">
-					<div class="col-sm-6 col-md-6 col-lg-6">
-						<div class="cont-info">
-							<div class="foto-info">
-								<img class="img-rounded proy" title="Deusto" src="img/eontzia.png">					
-							</div>
-							<div class="texto-info">
-								<h3 class="info-titulo">
-									eOntzia
-								</h3>
-								<h4>
-									<b>Descripción: </b> Proyecto entre tres centros de FP sobre la informatización de la recogida de residuos.
-								</h4>
-								<h4>
-									<b>Primer</b> premio de comunicación en los XXIX premios Don Bosco 2016 en Zaragoza.
-								</h4>								
-								<h4>
-									<b>Web: <a href="http://eontzia.zubirimanteoweb.com">eontzia.zubirimanteoweb.com</a></b>
-								</h4>
-							</div>
-						</div>
-						<hr class="separador">
-					</div>
-					<div class="col-sm-6 col-md-6 col-lg-6">
-						<div class="cont-info">
-							<div class="foto-info">
-								<img class="img-rounded proy" title="Spottinstyle" src="img/f1.jpeg">
-							</div>
-							<div class="texto-info">
-								<h3 class="info-titulo">
-									F1App
-								</h3>
-								<h4>
-									<b>Descripción: </b> Aplicacion móvil para Android con información sobre los pilotos, circuitos y escuderias de la Fórmula 1.
-								</h4>
-								<h4>
-									<b>Estado: </b> En desarrollo.
-								</h4>								
-								<h4>
-									<b>Lenguaje: </b> Java.
-								</h4>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<footer>
-		<div class="container">
-			<div class="social-icons icon-circle icon-zoom">
-				<h2>Contacto:</h2>
-				<a href="https://es.linkedin.com/in/ieraielizondo" title="Perfil LinkedIn" target="_blank" >
-					<i class="fa fa-linkedin" aria-hidden="true"></i>
-				</a>
-				<a href="https://github.com/ieraielizondo" title="Perfil de GitHub" target="_blank">
-					<i class="fa fa-github" aria-hidden="true"></i>
-				</a>
-				<a href="http://telegram.me/ieraielizondo" title="Contacto vía Telegram" target="_blank">
-					<i class="fa fa-paper-plane" aria-hidden="true"></i>
-				</a>
-				
-				<a href="mailto:ieraielizondo@gmail.com" title="Envíame un e-mail para ponerte en contacto conmigo.">
-					<i class="fa fa-envelope" aria-hidden="true"></i>
-				</a>
-			</div>
-		</div>		
-	</footer>
+  <!--Barra superior-->
+  <!--
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Ierai Elizondo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+      </div>
+    </div>
+  </nav> -->
+  <header>
+    <div class="bg-img text-center ">
+      <div class="mask d-flex align-items-center">
+        <div class="container d-flex justify-content-center ">
+          <div class="row">
+            <div class="col-sm text-white">
+              <h1>¡Hola! Soy Ierai Elizondo</h1>
+              <h3>Soldador profesional</h3>
+              <!-- <a class="btn btn-outline-secondary contactame " href="#" role="button">Contáctame</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container ">
+      <div class="row">
+        <div class=" mt-4 mb-2">
+          <h2 class="titulo mb-4">Sobre mí</h2>
+          <div class="card-content mb-2 ps-3">
+            <img src="./img/p4.jpg">
+            <p>
+              <span>H</span>ola, me llamo Ierai Elizondo y podría decir que soy soldador profesional. 
+              Mi relación con la soldadura no va acorde con mis estudios, ya que llevo en el mundo de la soldadura desde el 2016.
+            </p>
+            
+            <p>
+              Tras finalizar mis estudios de bachiller, me encaucé en el mundo de la informática y tras realizar tres grados superiores de formación profesional acabé en un taller de soldadura dónde sigo a día de hoy.
+            </p>
+            <p>
+              Cuando aterricé aquí no tenía ningún conocimiento de soldadura, pero poco a poco fui aprendiendo de mis compañeros. Aprendí a usar la guillotina y la plegadora para cortar y plegar chapas de todo tipo, a puntear y soldar con MIG en hierro, a trabajar el acero inoxidable, y por último a soldar con TIG.
+            </p>
+            <p>
+              Poco a poco fui mejorando y tecnificando mi manera de soldar ya que me fijaba mucho en las soldaduras de los soldadores que veía en YouTube e Instagram. Además, a finales de 2019 comencé unos cursos de soldadura de tubería tanto en TIG como con electrodo revestido que me han servido mucho para mejorar.
+            </p>
+            
+          </div>
+        </div>        
+      </div> <!--Fin 1er Row "Sobre mí"-->     
+      <div class="row"> <!--SEGUNDO ROW "EXPERIENCIA Y CURSOS"-->
+        <div class=" col-md-4 mt-3 mb-2">
+          <h2 class="titulo mb-4">Experiencia profesional</h2>
+          <div class="card-content mb-2 ps-3">
+            <h4>Nicron SL</h4>
+            <strong>2016 - actualmente</strong>
+            <p>Calderería situada en Astigarraga, Gipuzkoa. Realizo diversos trabajos de calderería como cortado y plegado de chapas de diferentes espesores, soldaduras MIG en hierro, soldaduras con electrodo revestido en varios materiales y soldadura TIG en varios materiales. </p>
+          </div>
+        </div>
+        <div class=" col-md-8 mt-3 mb-2">
+          <h2 class="titulo mb-4">Cursos</h2>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card-content mb-2 ps-3">
+                <h5>Preparación para homologación TIG</h5>
+                <p>Curso de 60h no reglado de Lanbide/Hobetuz</p>
+              </div>
+              <div class="card-content mb-2 ps-3">
+                <h5>Curso "Soldadura TIG avanzado"</h5>
+                <p>Curso de 60h no reglado de Lanbide/Hobetuz</p>
+              </div>
+              <div class="card-content mb-2 ps-3">
+                <h5>Curso "Soldadura TIG en posición horizontal"</h5>
+                <p>Curso de 60h no reglado de Lanbide/Hobetuz</p>
+              </div>            
+            </div>
+            <div class="col-sm-6">
+              <div class="card-content mb-2 ps-3">
+                <h5>Curso "Soldadura con electrodo revestido"</h5>
+                <p>Curso de 60h no reglado de Lanbide/Hobetuz</p>
+              </div>
+              <div class="card-content mb-2 ps-3">
+                <h5>Curso "Soldadura con electrodo revestido avanzado"</h5>
+                <p>Curso de 60h no reglado de Lanbide/Hobetuz</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div> <!-- FIN SEGUNDO ROW "EXPERIENCIA Y CURSOS"-->
+      <div class="row">
+        <h2 class="titulo mb-4">Cursos</h2>
+        <div class=" col-sm-6 col-md-4 mt-3 mb-2">
+          <div class="card-content mb-2 ps-3">
+            <h5>Preparación para homologación TIG</h5>
+            <p>Curso de 60h no reglado de Lanbide/Hobetuz</p>
+          </div>
+        </div>
+        <div class=" col-sm-6 col-md-4 mt-3 mb-2">
+          <div class="card-content mb-2 ps-3">
+            <h5>Curso "Soldadura TIG avanzado"</h5>
+            <p>Curso de 60h no reglado de Lanbide/Hobetuz</p>
+          </div>
+        </div>
+        <div class=" col-sm-6 col-md-4 mt-3 mb-2">
+          <div class="card-content mb-2 ps-3">
+            <h5>Curso "Soldadura TIG en posición horizontal"</h5>
+            <p>Curso de 60h no reglado de Lanbide/Hobetuz</p>
+          </div>
+        </div>
+        <div class=" col-sm-6 col-md-4 mt-3 mb-2">
+          <div class="card-content mb-2 ps-3">
+            <h5>Curso "Soldadura con electrodo revestido"</h5>
+            <p>Curso de 60h no reglado de Lanbide/Hobetuz</p>
+          </div>
+        </div>
+        <div class=" col-sm-6 col-md-4 mt-3 mb-2">
+          <div class="card-content mb-2 ps-3">
+            <h5>Curso "Soldadura con electrodo revestido avanzado"</h5>
+            <p>Curso de 60h no reglado de Lanbide/Hobetuz</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <h2 class="titulo mb-4">Cursos</h2>
+        <div class=" col-md mt-3 mb-2">
+          <div class="card-content mb-2 ps-3">
+            <ul>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum rem animi voluptatum accusamus nobis atque!
+                Maiores, alias? Illo at vero corporis cum, pariatur, exercitationem maxime libero laboriosam mollitia
+                quas beatae?
+              </li>
+              <li>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquam necessitatibus laboriosam illum iusto dolorem minima autem totam odit exercitationem molestias quam nesciunt, cupiditate architecto debitis eligendi, doloremque nihil magnam.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
 </body>
+
 </html>
