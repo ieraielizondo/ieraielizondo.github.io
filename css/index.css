@@ -1,4 +1,10 @@
+html{
+    font-family: Exo, serif;
+}
 body{
+    overflow-x: hidden;
+    max-width: 100vw;
+    background: #efefef;
     font-family: Exo, serif;
 }
 
@@ -13,6 +19,12 @@ body{
 .mask{
     background-color: rgba(0, 0, 0, 0.35);
     height: inherit;
+}
+.principal h1{
+    font-size: 3.5rem;
+}
+.principal h{
+    font-size: 2.75rem;
 }
 
 /*Botón*/
@@ -63,21 +75,31 @@ body{
 }*/
 
 /* DISEÑO CARDS */
-
-.card-content{
-    position: relative;
-    border-left: 2px solid #0e1c29;
-    margin-top: 3rem;
+.row{
+    margin-bottom: 1.5rem;
 }
-.card-content>p{
-    padding-bottom: 0.5rem;
+.card-content{
+    background: white;
+    padding: 1.5rem;
+    position: relative;
+    border-left: 3px solid #0e1c29;
+    margin-top: 3rem;
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+}
+.card-content p{
+
     line-height: 1.6;
 }
-.card-content>p>span:first-of-type{
+.card-content p:last-child{
+
+    margin: 0;
+}
+.card-content p span:first-of-type{
     font-size: 2.5rem;
     line-height: 55%;
 }
-.card-content>img:first-of-type{
+.card-content img:first-of-type{
     height: 320px;
     width: 270px;
     float: left;
@@ -87,7 +109,7 @@ body{
 }
 /* CIRCULO CARD */
 
-.card-content::before{
+/*.card-content::before{
     content: "";
     position: absolute;
     width: 1rem;
@@ -96,8 +118,9 @@ body{
     left: -9px;
     top: 0;
     background: #fff;
-    border: 2px solid #0e1c29;/*#0563bb;*/
-}
+    border: 2px solid #0e1c29;
+}*/
+
 .titulo{
     position: relative;
     text-align: center;
@@ -105,10 +128,34 @@ body{
 p{
     line-height: 1.3;
 }
+
+
+/* FOOTER */
+
+footer{
+    background: #222;
+    padding: 2rem;
+    color: white;
+    font-size: 0.75rem;
+}
+footer section{
+    float: right;
+}
+footer a{
+    transition: color 0.3s ease;
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    color: cornflowerblue;
+}
+footer p{
+    margin: 0;
+}
 /*MEDIA QUERIES*/
 @media(max-width: 576px){
     .card-content>img:first-of-type{
-        height: 320px;
+        height: 400px;
         width: 100%;
         margin-bottom: 25px;
     }
