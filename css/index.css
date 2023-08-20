@@ -141,6 +141,13 @@ section{
 .section_text p:last-child{
     margin-bottom: 0;
 }
+.enlace{
+    text-decoration: none;
+    color: currentColor;
+    font-weight: bold;
+    text-shadow: 1px 2px 0px #77a4ff;
+    font-style: italic;
+}
 /***** EXPERIENCIA *****/
 
 .experiencia_content h2{
