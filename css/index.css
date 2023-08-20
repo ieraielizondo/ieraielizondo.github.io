@@ -16,9 +16,16 @@ body{
     background-size: cover;
     background-position: center;
 }
-.mask{
-    background-color: rgba(0, 0, 0, 0.35);
+.mask2{
+    background: rgba(0, 0, 0, 0.45);
     height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.principal{
+    display: block;
 }
 .principal h1{
     font-size: 2.5rem;
@@ -52,14 +59,14 @@ body{
 /*Fin Botón*/
 
 /* SUBRAYADO TITULOS */
-.titulo::before{
+.seccion_titulo::before{
     content: "";
     position: absolute;
     display: block;
     height: 3px;
     width: 100%;
-    /*background: #b8b7bf;*/
-    background: #0e1c29;
+    background: #707070;
+    /*background: #0e1c29;*/
     bottom: -12px;
 
 }
@@ -74,7 +81,11 @@ body{
     bottom: -13px;
 }*/
 
-/* DISEÑO CARDS */
+/*******************************/
+/****** DISEÑOS GENÉRICOS ******/ 
+/*******************************/
+
+
 .row{
     margin-bottom: 1.5rem;
 }
@@ -82,13 +93,17 @@ body{
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-    
-    
-.titulo{
+.seccion_titulo{
     position: relative;
     text-align: center;
     margin-bottom: 1.5rem;
 }
+.H_mayus{ /*N mayuscula presentación*/
+    font-size: 2.5rem;
+    line-height: 55%;
+}
+/* DISEÑO CARDS */
+
 .carta{
     background: white;
     padding: 1.75rem;
@@ -97,28 +112,58 @@ body{
     box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.5);
     border-radius: 0.5rem;
 }
-.carta h3{
+.carta_sobremi2{
+    display: flex;
+    align-items: stretch;
+    background: white;
+    padding: 1.75rem;
+    margin-top: 3rem;
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+}
+.carta_title{
     border-bottom: solid 1px black;
 }
-.carta p{
+.carta_text{
 
     line-height: 1.6;
 }
-.carta p:last-child{
+.carta_sobremi > .carta_text:last-child{
 
     margin: 0;
 }
-.carta p span:first-of-type{
-    font-size: 2.5rem;
-    line-height: 55%;
+.carta_img{
+    display: block;
+    position: relative;
+    float: left;
+    width: 20%;
+    
+    margin: 0 20px 0 0;
+
 }
-.carta img:first-of-type{
+.carta_content{
+    display: block;
+    float: right;
+    width: 80%;
+    height: 100%;
+    position: relative;
+    line-height: 1.6;
+}
+.foto1{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    outline:1px solid black;
+    border-radius: 4%;
+}
+.foto{
+    display: block;
     height: 310px;
     width: 270px;
     float: left;
     outline:1px solid black;
     border-radius: 4%;
-    margin-right: 20px;
+    margin: 0 20px 20px 0; /* margin: top right bottom left */
 }
 .carta-curso h4{
     border-bottom: 1px solid black;
@@ -127,6 +172,27 @@ body{
 }
 .carta-curso p{
     font-size: 1rem;
+}
+
+/***********************/
+/****** SECCIONES ******/ 
+/***********************/
+
+/** SOBRE MÍ **/ 
+/** EXPERERIENCIA PROFESIONAL **/ 
+/** CURSOS **/
+
+
+/** FORMACIÓN ACADÉMICA **/ 
+/** CONOCIMIENTOS DE SOLDADURA **/ 
+/** PROYECTO IG **/ 
+
+
+
+.carta-curso h4{
+    border-bottom: 1px solid black;
+    font-weight: 700;
+    font-size: 1.25rem;
 }
 
 /* LISTA CURSOS */
@@ -157,70 +223,85 @@ body{
     border: 2px solid #0e1c29;
 }*/
 
-
-p{
-    line-height: 1.3;
-}
-
-
 /* FOOTER */
 
 footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background: #222;
-    padding: 0;
-    color: white;
-    font-size: 0.75rem;
+    padding: 1rem;
     height: 4rem;
 }
-footer p{
-    float: left;
-    margin: calc((4rem - 0.75rem) /2);
+.footer_text p{
+    color: white;
+    font-size: 1rem;
+    margin: 0;
 }
-footer ul li{
+footer ul{
+    margin: 0;
+}
+.iconos_social li{
     float: right;
     list-style: none;
+    margin-left: 10px;
 }
-footer ul a{
-    float: right;
+.iconos_social a{
+    color: white;
+    vertical-align: -webkit-baseline-middle;
+}
+.iconos_social a svg{
     transition: color 0.3s ease;
     text-decoration: none;
-    color: white;
-    margin-top: calc((4rem - 25px)/2);
-    margin-bottom: calc((4rem - 25px)/2);
-    margin-right: calc((4rem - 25px)/2);
+    height: 20px;
+    width: 20px;
+    
 }
-footer a:hover{
-    color: cornflowerblue;
-}
+
 
 /*MEDIA QUERIES*/
 @media(max-width: 576px){
-    .carta>img:first-of-type{
+    .foto{
         height: 400px;
         width: 100%;
         margin-bottom: 25px;
     }
+    footer{
+        padding: 0 1rem;
+    }
+    .footer_text p{
+        font-size: 0.75rem;
+    }
+    
+    .iconos_social a svg{
+        height: 16px;
+        width: 16px;
+    }
+    .iconos_social li{
+        margin-left: 16px;
+    }
 }
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) { 
-    /*.bg-img{
-        height: 380px;
-    }*/
+    .iconos_social a svg{
+        height: 20px;
+        width: 20px;
+    }
     
     
  }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
-    /*.bg-img{
-        height: 460px;
-    }*/
+    
     
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) { 
-    
+    .iconos_social a:hover{
+        color: cornflowerblue;
+    }
     
  }
 
